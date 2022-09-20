@@ -1,0 +1,88 @@
+.grey-text{
+    color:#a5a4a4 !important;
+}
+
+.dark-grey-text{
+    color:#686767 !important;
+}
+
+.main-hero{
+    height:100vh;
+    background: #dcdcdc;
+    position: relative;
+    overflow: hidden;
+}
+
+.absolute-name{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    margin: auto;
+    color: black;
+    font-weight: 800;
+    z-index: 5;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+.name-text-hero{
+    font-size: 7.5em;
+    font-weight: 900;
+    text-transform: uppercase;
+    letter-spacing: 20px;
+    white-space: nowrap;
+    transform: translate(0px, 75%);
+    transition: all 1s linear;
+}
+
+.name-move{
+    transform: translate(-75%, 75%);
+}
+
+
+.hero-img-absolute{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: auto;
+    max-width: 100%;
+    height: 90%;
+    margin: auto;
+}
+
+.hero-location{
+    position: absolute;
+    bottom: 5%;
+    left: 5%;
+}
+
+.hero-loc-text{
+    font-size: 1.2em;
+    font-weight: 300;
+}
+
+.hero-loc-text i{
+    font-size: 0.9em;
+}
+
+.hero-job-box{
+    position: absolute;
+    left: 3%;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.bold-highlight{
+    font-weight: 400;
+}
+
