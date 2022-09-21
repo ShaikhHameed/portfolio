@@ -6,6 +6,40 @@
     color:#686767 !important;
 }
 
+.dot-title{
+    font-size: 0.2em;
+    position: absolute;
+    bottom: 10px;
+    left: 0;
+    transform: translateX(0);
+    transition: all .4s ease-in-out;
+}
+
+.nav-title{
+    display: flex;
+    flex-direction: row;
+    position: relative;
+}
+
+.nav-title:hover .hidden-title{
+      width:100%;
+}
+
+.nav-title:hover .dot-title{
+    transform: translateX(235px);
+}
+
+.visible-title{
+    margin-right:5px;
+    margin-left: 8px;
+}
+
+.hidden-title{
+    width:0%;
+    overflow: hidden;
+    transition: all .4s ease-in-out;
+}
+
 .main-hero{
     height:100vh;
     background: #dcdcdc;
