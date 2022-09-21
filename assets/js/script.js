@@ -1,10 +1,5 @@
 $(document).ready(function(){
 
-  $('.work-img-box').hide();
-
-
-     
-
   $(function() {
     $('#selector').mouseenter(function() {
       $('.work-img-box').fadeIn("fast");
