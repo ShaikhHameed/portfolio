@@ -7,31 +7,16 @@ $(document).ready(function(){
 
   $(function() {
     $('#selector').mouseenter(function() {
-      $('.work-img-box').show();
-      console.log("Inside");
+      $('.work-img-box').fadeIn("fast");
     });
   });
 
   $(function() {
-    $('.about-section').mouseenter(function() {
-      $('.work-img-box').hide();
+    $('.no-img-box').mouseenter(function() {
+      $('.work-img-box').fadeOut("fast");
     });
   });
 
-
-
-
-  $(function() {
-    $('.white-bottom').mouseenter(function() {
-      $('.work-img-box').hide();
-    });
-  });
-
-  $(function() {
-    $('.footer-section').mouseenter(function() {
-      $('.work-img-box').hide();
-    });
-  });
 
 
 
@@ -52,10 +37,10 @@ $(document).ready(function(){
     var $circle = $('#move-box');
 
 function moveCircle(e) {
-	TweenLite.to($circle, 0, {
+	TweenLite.to($circle, 0.5, {
     css: {
-      left: e.pageX,
-      top: e.pageY
+      left: (e.pageX + 50),
+      top: (e.pageY + 20)
     }
   });
 }
