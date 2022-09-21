@@ -9,6 +9,10 @@
     }
 }
 
+html {
+    scroll-behavior: smooth;
+  }
+
 body{
     overflow-x: hidden;
 }
@@ -53,10 +57,20 @@ body{
     background-image: linear-gradient(90deg, #FF9A8B 0%, #FF6A88 55%, #FF99AC 100%);
 }
 
+.about-title{
+    font-size: 3.5em;
+}
+
 .work-card{
     border-bottom: 1px solid #a5a4a4;
     padding: 15px 10px;
     position: relative;
+    background-color: white;
+    transition: all 0.2s ease-in;
+}
+
+.work-card:hover{
+    background-color: #e5e5e566;
 }
 
 .work-img{
@@ -67,6 +81,10 @@ body{
     font-size: 2.3em;
     font-weight: 400;
     text-transform: uppercase;
+}
+
+.word-desc{
+    font-weight: 300;
 }
 
 .work-type{
@@ -147,13 +165,15 @@ body{
 }
 
 .btn-title-small{
-    margin:0;
+    margin: 0;
     font-weight: 300;
+    font-size: 0.9em;
 }
 
 .btn-title{
-    margin:0;
+    margin: 0;
     font-weight: 400;
+    font-size: 1.1em;
     letter-spacing: 2px;
 }
 
@@ -167,7 +187,7 @@ body{
 
 .red-btn{
     position: relative;
-    padding: 0.8em 2em;
+    padding: 0.5em 2em;
     margin: 0 16px;
     border-radius: 74px;
     background: var(--theme-red);
@@ -206,7 +226,7 @@ body{
 
 .grey-btn{
     position: relative;
-    padding: 0.8em 2em;
+    padding: 0.5em 2em;
     margin: 0 16px;
     border-radius: 74px;
     background: #cdcccc;
