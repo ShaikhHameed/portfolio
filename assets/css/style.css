@@ -256,6 +256,10 @@ body{
     transform: translateX(0);
 } 
 
+.work-img-box{
+    display: none;
+}
+
 
 
 
