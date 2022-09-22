@@ -1,0 +1,128 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+a{
+    color: inherit !important;
+    text-decoration: none !important;
+}
+a:hover{
+    color: inherit !important;
+    text-decoration: none !important;
+}
+
+@media screen and (max-width:992px) {
+    .main-nav{
+        display: none !important;
+    }
+    .mob-nav{
+        display: block !important;;
+    }
+}
+
+.main-nav{
+    position: absolute;
+    display: block;
+    width: 100%;
+    z-index: 50;
+}
+
+.mob-nav{
+    display:none;
+    position: fixed;
+    padding: 10px;
+    background:white;
+    width:100%;
+    z-index: 50;
+
+}
+
+.nav-link-box{
+    width: 100%;
+    height: 91%;
+    position: fixed;
+    background: #343434;
+    top: 9%;
+    left: 100%;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    transition: all 0.8s cubic-bezier(1, 0, 0.18, 1.05);
+}
+
+.nav-link-box.active{
+    left:0 !important;
+}
+
+.mob-navlink{
+    font-size: 3em;
+    font-weight: 300;
+    margin: 15px auto;
+    text-transform: capitalize;
+}
+
+.mobile-nav-btn{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 10px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+
+.circle-icon{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 50px;
+    width: 50px;
+    padding: 14px;
+    background: #343434;
+    border-radius: 50px;
+}
+
+.icon-invert{
+    filter: invert();
+}
+
+.nav-title{
+    font-size:2em;
+    font-weight: 600;
+}
+.nav-control{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+}
+
+.nav-links-main{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.link-box{
+    margin: 0 20px;
+}
+
+.navi-link{
+    font-size: 1.7em;
+    text-decoration: none;
+    color: inherit;
+    font-weight: 300;
+}
+
+.navi-link:hover{
+    text-decoration: none;
+    color: inherit;
+}
+
